@@ -20,12 +20,12 @@ La plataforma está diseñada para comunicarse de forma bidireccional y segura c
 
 ## 2. Endpoint de Ejemplo: Validación de Expediente en LexCore
 
-```http
-POST /api/v1/lexcore/validar-expediente
-Content-Type: application/json
+### Solicitud (POST /api/v1/lexcore/validar-expediente)
 
-{
-  "expediente_id": "EXP-2026-MINCOM-0012",
-  "normativas": ["RES_13_2026", "RES_160", "TRANSF_170"]
-}
+* Petición enviada:
+{"expediente_id": "EXP-2026-MINCOM-0012", "normativas": ["RES_13_2026", "RES_160", "TRANSF_170"]}
 
+### Respuesta HTTP 200 OK
+
+* Resultado devuelto:
+{"expediente_id": "EXP-2026-MINCOM-0012", "estado_cumplimiento": "APROBADO", "nivel_riesgo": "BAJO", "detalles": [{"norma": "Resolucion 13/2026", "cumple": true, "observacion": "Actor registrado en abasto"}, {"norma": "Transformacion 170", "cumple": true, "observacion": "Garantia bancaria validada"}]}

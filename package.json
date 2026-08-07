@@ -1,0 +1,26 @@
+{
+  "name": "vts-govproc-ai",
+  "version": "3.0.0",
+  "description": "Plataforma Nacional Inteligente para Compras Públicas, Licitaciones y Gestión Contractual",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "keywords": [
+    "govproc",
+    "mincom",
+    "subastas",
+    "expediente-unico",
+    "lexcore"
+  ],
+  "author": "VTS Software Architecture",
+  "license": "PROPRIETARY"
+}
+
